@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Edit text to enter name -->
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:fontFamily="@font/acme"
+        android:hint="Enter Name"
+        android:textSize="22sp" />
+
+    <!-- Edit text to enter age -->
+    <EditText
+        android:id="@+id/enterAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:fontFamily="@font/acme"
+        android:hint="Enter Age"
+        android:textSize="22sp" />
+
+    <!-- Button to add Name -->
+
+    <!-- Button to print Name -->
+    <Button
+        android:id="@+id/addName"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="@color/cardview_dark_background"
+        android:fontFamily="cursive"
+        android:text="Add Name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:backgroundTint="#3A3A3A" />
+
+    <Button
+        android:id="@+id/printName"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:background="#3E3E3E"
+        android:fontFamily="cursive"
+        android:text="Print Name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:backgroundTint="#333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Text view to get all name -->
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Name\n\n"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <!-- Text view to get all ages -->
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="20sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/acme"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Age\n\n"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
